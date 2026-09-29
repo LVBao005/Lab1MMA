@@ -1,0 +1,90 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# ──────────────────────────────────────────────
+# 🔐 SENSITIVE / SECRET FILES — Never commit!
+# ──────────────────────────────────────────────
+.env
+.env.local
+.env*.local
+*.env
+
+# Firebase secrets & native config files
+google-services.json
+GoogleService-Info.plist
+firebase-debug.log
+firebase-debug.*.log
+
+# ──────────────────────────────────────────────
+# 🤖 AI Agent / IDE internals
+# ──────────────────────────────────────────────
+# Antigravity / Gemini agent config
+../.agents/
+.agents/
+AGENTS.md
+skills-lock.json
+.gemini/
+
+# ──────────────────────────────────────────────
+# 📄 Reports & Exam Submissions
+# ──────────────────────────────────────────────
+REPORT.md
+REPORT_*.md
+*.docx
+*.doc
+
+# ──────────────────────────────────────────────
+# 📦 Dependencies
+# ──────────────────────────────────────────────
+node_modules/
+
+# ──────────────────────────────────────────────
+# ⚡ Expo
+# ──────────────────────────────────────────────
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# ──────────────────────────────────────────────
+# 📱 Native generated folders
+# ──────────────────────────────────────────────
+/ios
+/android
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# ──────────────────────────────────────────────
+# 🚇 Metro bundler
+# ──────────────────────────────────────────────
+.metro-health-check*
+
+# ──────────────────────────────────────────────
+# 🐛 Debug logs
+# ──────────────────────────────────────────────
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# ──────────────────────────────────────────────
+# 🖥️ OS files
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.pem
+
+# ──────────────────────────────────────────────
+# 📝 TypeScript
+# ──────────────────────────────────────────────
+*.tsbuildinfo
+
+# ──────────────────────────────────────────────
+# 🏗️ Build outputs
+# ──────────────────────────────────────────────
+build/
+out/
